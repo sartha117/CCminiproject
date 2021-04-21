@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Download Public Key
+</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="shortcut icon" type="image/x-icon" href="cloud2.png">
+</head>
+<body>
+	{%if msg != ''%}
+		<h3>{{msg}}</h3>
+	{%else%}
+	<center >
+		<br><br>
+	<p style="font-size:30px"><b>The following are the different files stored on the cloud:</b></p>
+	<br><br>
+		<div style="margin: 0 250px;">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th>Uploader</th>
+				</tr>
+			</thead>
+			<tbody>
+					{%for itr in range(length):%}
+					<tr>
+						<td><a href="retrieve/key/{{directory[itr]}}">Click here to download public key</a></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>{{directory[itr]}}</td>
+					</tr>
+					{%endfor%}
+			</tbody>
+		</table>
+		</div>
+	{%endif%}
+	</center>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="shortcut icon" type="image/x-icon" href="cloud2.png">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='cloud2.png')}}">
+		<!-- Character encoding scheme -->
+		<meta charset="UTF-8"> 
+		<title>Cloud Computing - Text Transfer</title>
+		<style type="text/css">
+			body{
+				font-family: 'Raleway',sans-serif;
+			}
+			a:active,a:hover,a:visited,a:link {
+				text-decoration: none;
+				color: black;
+			}
+			button {
+				background-color: white;
+				color :grey;
+				border-radius: 10px;
+			}
+			button:hover {
+				background-color: white;
+				color: black;
+			}
+			.btn-general{
+			    font-family: 'Raleway', sans-serif;
+			    border-radius: 30px;
+			    font-size: 13px;
+			    text-transform: uppercase;
+			    margin: 0 6px;
+			    padding: 12px 46px;
+			    transition: all .5s;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container" style="">
+		
+		<center>
+			<br><br>
+			<h1 style="font-size: 35px;padding: 30px 0;">Secure Text Transfer Using Diffie-Hellman Key Exchange Based On Cloud</h1><br><br>
+					
+					<td style="padding: 1px"><a href="register"><button class="btn-general" style="background-color: #392F5A;color:white">register user</button></a></td>
+					<td style="padding: 1px"><a href="upload-file"><button class="btn-general " style="background-color: #392F5A; color:white;">file upload</button></a></td>
+					<br><br>
+					<td style="padding: 1px"><a href="file-directory"><button class="btn-general " style="background-color: #392F5A; color:white;">file directory</button></a></td>
+					
+					<td style="padding: 1px"><a href="public-key-directory"><button class="btn-general" style="background-color: #392F5A; color:white;">download public key</button></a></td>
+					
+			
+		</center>
+		<br><br><br><br>
+		<div class="fluid-container" style="font-size:16px;font-color: ">
+		<p>The user gets to choose from one of the following options:</p>
+		
+		<ul>
+			<li><i>Upload files on the cloud in a secured manner.</i></li>
+			<li><i>Choose from the list of all the different files that are present on the cloud provided he has the required credentials for decrypting the file.</i></li>
+			<li><i>Download the public key associated with the user with whom the file transfer is to take place.</i></li>
+			<li><i>To upload his file to cloud storage the user needs to be registered so that his file can be shared with the other desired person in an instant.</i></li>
+		</ul>
+	</div>
+	</div>
+	</body>
+</html>
